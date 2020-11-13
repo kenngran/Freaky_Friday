@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order a Ride</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li ><a href="index.html">Home</a></li>
+				<li class="orderRideButton"id="nav_Location"><a href="orderRide.html">Order a Ride</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<form action="orderRide_finish.html">
+			<h1>Finish the order by entering information about your ride.</h1>
+			<div id="formInputs">
+
+				<fieldset id="formPosition">
+					<legend >Where are you going?</legend>
+					<div class="formRow">
+						<div class="formPairing">
+							<label for="Origin">Origin:</label>
+							<input id="Origin" type="text">
+						</div>
+						<div class="formPairing">
+							<label for="Destination">Destination:</label>
+							<input id="Destination" type="text">
+						</div>
+					</div>
+				</fieldset>
+
+				<div id="formLine2" class="formRow">
+					<div class="formPairing">
+						<fieldset id="formRadioGrouping">
+							<legend>Do you use a wheelchair?</legend>
+							<div>
+								<label for="yes" >Yes:</label>
+								<input id="yes" type="radio" name="wheelchair">
+							</div>
+							<div>
+								<label for="no">No:</label>
+								<input id="no" type="radio" name="wheelchair">
+							</div>
+						</fieldset>
+					</div>
+					<div id="formAmountRiding" class="formPairing">
+						<label for="amountRiding">How many people are riding?:</label>
+						<input id="amountRiding" type="number">
+					</div>
+				</div>
+				<div class="formRow">
+					<div id="formOther" class="formPairing">
+						<label for="other">Are there any other needs your driver should know about?</label>
+						<textarea id="other" type="text"></textarea>
+					</div>
+				</div>
+			<div id="centerButton"><input class="submit" type="submit" value="Finish Order &rarr;"></div>
+			</div>
+		</form>
+	</main>
+
+</body>
+</html>

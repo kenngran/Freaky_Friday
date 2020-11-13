@@ -1,0 +1,238 @@
+body{
+	font-family: Arial, sans-serfi;
+	background-color: #F2F2F2;
+	margin: 0;
+}
+	/* <-- Nav Bar --> */
+	header{
+
+		z-index: 1;
+		box-shadow: 0px 2px 7px grey;
+	}
+	nav{
+		background-color: white;
+		padding: 5px;
+		
+	}
+	nav ul{
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 12px;
+		margin-top: 12px;
+		padding: 0;
+	}
+	nav li{
+		display: flex;
+		flex-direction: row;
+		padding: 7px;
+		line-height: 100%;
+		align-items: center;
+	}
+	nav a{
+		text-decoration: none;
+		font-size: 26px;
+		color: black;
+	}
+	#nav_Location{
+		border: 5px solid #0D4C50;
+		border-radius: 8px;
+	}
+	.orderRideButton{
+		color: white;
+		background-color: #108F96;
+		border-radius: 6px;
+		padding: 10px;
+		transition: background-color 0.5s;
+
+		text-decoration: none;
+		line-height: 30px;
+		text-align: center;
+	}
+	.orderRideButton:after{
+		content: "\2192";
+		margin-left: 8px;
+	}
+	.orderRideButton:hover{
+		background-color: #0D4C50;
+		transition: background-color 0.5s;
+	}
+	.orderRideButton a{
+		color:white;
+	}
+
+	/* <-- Footer -->*/
+	footer{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+	}
+
+
+	/* <-- Index Content --> */
+	#bannerPic{
+		width: 100%;
+		height: 400px;
+
+		background-image: url("Wheelchair_Car.jpeg");
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+
+		display: flex;
+		align-items: center;
+	}
+	.centeredInfoBox{
+		background-color: white;
+		border: 4px solid #333434;
+		border-radius: 8px;
+		width: 60%;
+		margin: auto;
+		padding: 40px;
+
+		font-size: 32px;
+		text-align: center;
+	}
+
+	.centeredInfoBox p{
+		margin: 0;
+		margin-bottom: 30px; 
+	}
+
+	/* <-- Order Ride 1 --> */
+	form{
+		width: 70%;
+		margin: auto;
+		margin-top: 40px;
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 7px;
+		padding: 20px;
+		min-width: 300px;
+		max-width: 1200px;
+	}
+	form h1{
+		text-align: center;
+		font-size: 28px;
+		font-weight: normal;
+		border-bottom: solid 3px #108F96;
+		padding: 20px;
+		margin: 0;
+	}
+	#formInputs{
+		font-size: 18px;
+		padding: 50px;
+		padding-bottom: 30px;
+	}
+	#formInputs label{
+		margin-bottom: 5px;
+	}#formInputs input{
+		margin-bottom: 30px;
+		padding: 5px;
+	}
+	#formInputs input[type=submit]{
+		background-color: #108F96;
+		border: none;
+		border-radius: 6px;
+		color: white;
+		font-size: 18px;
+		padding: 15px 30px;
+		margin: 30px 0 0;
+	}
+	#formInputs input[type=submit]:hover{
+		cursor: pointer;
+	}
+	#centerButton{
+		display: flex;
+		justify-content: center;
+	}
+	.formPairing{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.formRow{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	/* <-- Order Ride 2 --> */
+	#formPosition{
+		border: 2px solid #108F96;
+		border-radius: 6px;
+		padding: 20px 10px;
+		margin-bottom: 40px;
+	}
+	#formPosition input{
+		margin-bottom: 10px;
+	}
+	#formRadioGrouping{
+		border: 2px solid #108F96;
+		border-radius: 6px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 20px;
+	}
+	#formRadioGrouping input{
+		margin-bottom: 10px;
+	}
+	#formRadioGrouping div{
+		margin-top: 10px;
+	}
+	#formAmountRiding{
+		width: 150px;
+	}
+	#formOther{
+		width: 70%;
+		min-width: 180px;
+	}
+	#formOther label{
+		margin-bottom: 15px;
+	}
+	#formOther textarea{
+		height: 100px;
+	}
+	#formLine2{
+		justify-content: space-around;
+		margin-bottom: 20px;
+	}
+	#finishOrder{
+		width: 70%;
+		margin: auto;
+		margin-top: 40px;
+		background-color: white;
+		border: 1px solid black;
+		border-radius: 7px;
+		padding: 20px;
+
+		text-align: center;
+	}
+	#finishOrder p{
+		font-size: 18px;
+	}
+	#finishOrder h1{ 
+	}
+	/* <-- Media query --> */
+	@media screen and (min-width: 1600px){
+		#formInputs{
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+		form{
+			width: 60%;
+		}
+		#formAmountRiding{
+			width: 210px;
+		}
+	}
+	@media screen and (min-width: 1800px){
+		.centeredInfoBox{
+			width: 45%;
+		}
+		
+	}

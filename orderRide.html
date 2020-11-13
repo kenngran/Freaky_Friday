@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order a Ride</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li ><a href="index.html">Home</a></li>
+				<li class="orderRideButton"id="nav_Location"><a href="orderRide.html">Order a Ride</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<form action="orderRide_2.html">
+			<h1>To order a ride <i>start</i> by filling in your personal information</h1>
+			<div id="formInputs">
+
+				<div class="formRow">
+					<div class="formPairing">
+						<label for="name">Full Name:</label>
+						<input id="name" type="text" autocomplete="name">
+					</div>
+					<div class="formPairing">
+						<label for="email">Email:</label>
+						<input id="email" type="email" autocomplete="email">
+					</div>
+				</div>
+
+				<div class="formRow">
+					<div class="formPairing">
+						<label for="phone">Phone Number:</label>
+						<input id="phone" type="tel" autocomplete="tel">
+					</div>
+					<div class="formPairing">
+						<label for="email">Address:</label>
+						<input id="email" type="text" autocomplete="Address">
+					</div>
+				</div>
+			<div id="centerButton"><input class="submit" type="submit" value="Step 2 &rarr;"></div>
+			</div>
+		</form>
+	</main>
+
+</body>
+</html>
